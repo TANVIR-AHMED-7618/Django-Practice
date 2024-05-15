@@ -17,9 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from machine_learning import views
+from Blogs import views as fb
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.machine),
     path('deep/', views.deep_learning),
+    path('fb/', fb.first_blog),
 ]
