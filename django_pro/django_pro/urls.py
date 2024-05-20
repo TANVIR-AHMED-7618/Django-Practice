@@ -1,15 +1,13 @@
 
 
 from django.contrib import admin
-from django.urls import path
-from machine_learning.views import machine
-from machine_learning.views import deep_learning
-from Blogs.views import first_blog
+from django.urls import path, include
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', machine),
-    path('deep/', deep_learning),
-    path('fb/',first_blog),
+    path('', include('machine_learning.urls')),
+    path('dl/', include('Deep_learning.urls')),
+    path('da/', include('data_analysis.urls')),
+    path('Blg/', include('Blogs.urls')),
 ]
