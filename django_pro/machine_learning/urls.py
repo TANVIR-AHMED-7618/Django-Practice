@@ -6,5 +6,5 @@ from . import views
 
 urlpatterns = [
     path('', views.machine),
-    path('', views.ml),
+    path('ml/', views.ml),
 ]
