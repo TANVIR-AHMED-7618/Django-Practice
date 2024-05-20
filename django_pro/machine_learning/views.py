@@ -7,5 +7,5 @@ def machine(request):
     return HttpResponse('Hello, Django!')
 
 
-def deep_learning(request):
+def ml(request):
     return HttpResponse('This is my second view')
