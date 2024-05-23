@@ -5,6 +5,5 @@ from . import views
 
 urlpatterns = [
     path('', views.first_blog),
-    path('', views.second_blog),
     
 ]
