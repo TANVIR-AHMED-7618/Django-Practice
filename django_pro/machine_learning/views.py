@@ -4,8 +4,5 @@ from django.http import HttpResponse
 # Create your views here.
 
 def machine(request):
-    return HttpResponse('Hello, Django!')
+    return render(request, 'machine_learning.html')
 
-
-def ml(request):
-    return HttpResponse('This is my second view')
